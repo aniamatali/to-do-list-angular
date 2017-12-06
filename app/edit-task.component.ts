@@ -5,7 +5,7 @@ import { Task } from './task.model';
   selector: 'edit-task',
   template: `
   <div>
-    <div *ngIf="selectedTask">
+    <div *ngIf="childSelectedTask">
     <h3>{{childSelectedTask.description}}</h3>
     <p>Task Complete? {{childSelectedTask.done}}</p>
     <hr>
